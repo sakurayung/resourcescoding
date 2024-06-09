@@ -8,6 +8,13 @@ p {
     padding: 0;
 }
 
+.montserrat-mainfont {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 617;
+    font-style: normal;
+  }
+
 .header-container {
     display: flex;
     align-items: center;
@@ -21,9 +28,13 @@ p {
 .header {
     color: white;
     padding: 10px;
+    position: relative;
+    z-index: 1000;
 }
 
 .header2 {
+    position: relative;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -38,6 +49,7 @@ p {
 
 
 .begin-container {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,6 +59,40 @@ p {
     font-size: 50px;
 }
 
+.begin-container img {
+    width: 50%;
+    height: auto;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
 .begin-container p {
     width: 400px;
+}
+
+span {
+    color: red;
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+}
+
+.header-text h1 {
+   font-size: 70px;
+   margin: 0;
+   margin-top: 50px;
+}
+
+.header-text p {
+    font-size: 25px;
+    font-family: "Montserrat";
+    width: 500px;
+    margin-bottom: 25px;
 }
