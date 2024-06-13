@@ -23,19 +23,41 @@
     </div>
     
 </header>
-<body>
-    <div class="begin-container">
-        <div class="overlay-text">
-            <p>Do things without <span>hesitation.</span></p>
-        </div>
-        <img src="thumbnails/violent-crimes.jpg" alt="">
-    </div>
 
-    <div>
+<body>
+    <section>
+        <img src="thumbnails/bg.jpg" id="sky">
+        <img src="thumbnails/mountain.png" id="mountain">
+        <img src="thumbnails/road.png" id="road">
+        <h2 id="text">dream more!</h2>
+    </section>
+    <script type="text/javascript">
+        let sky = document.getElementById("sky");
+        let road = document.getElementById("road");
+        let mountain = document.getElementById("mountain");
+        let text = document.getElementById("text");
+
+
+        window.addEventListener('scroll', () => {
+        var value = window.scrollY;
+
+        sky.style.top = value * 0.5 + 'px';
+        mountain.style.top = -value * 0.15 + 'px';
+        road.style.top = value * 0.15 + 'px';
+        text.style.top = value * 1 + 'px';
+
+})
+</script>
+
+    <!--INTRODUCTION-->
+    <div class="container-first">
         <div class="header-text">
             <h1 id="joross">Hi, I'm Joross.</h1>
             <p>I'm an aspiring developer that doesn't have a clear goal of what to pursue yet but determined to learn in the tech industry.</p>
-            <p>Currently I'm learning basic html and css and will update this portfolio of mine everytime I discover things!</p>
+            <p>Currently I'm learning front-end and will update this portfolio of mine everytime I discover things!</p>
+        </div>
+        <div>
+            <img class="profile" src="thumbnails/profile.jpg" alt="">
         </div>
     </div>
 </body>
